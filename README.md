@@ -1,10 +1,10 @@
 # Pentaku JS
 This is a small game I made to learn some basic javascript and HTML canvas. I intentionally chose to create it using only vanilla javascript in order to master the fundamentals. Its called Pentaku because [Pentago](https://en.wikipedia.org/wiki/Pentago) and [Gomoku](https://en.wikipedia.org/wiki/Gomoku) are two of the games you can play with this app.
 
-## [Demo here]()
+### [Demo here]()
 
-### The basics:
-1.Place player piece on empty space of board
+#### The basics:
+1. Place player piece on empty space of board
 2. (Optional, if rotation enabled) Choose a quadrant and rotate it 90 degrees clockwise or couterclockwise
 3. Win by getting enough of your player pieces in a horizontal, vertical, or diagonal line  
 
