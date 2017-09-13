@@ -10,6 +10,8 @@ This is a small game I made to learn some basic javascript and HTML canvas. I in
 
 The app includes a GUI that allows the user edit parameters of the game:
 
+| board attribute  | description |
+| ------------- | ------------- |
 | rotate radius  | if zero, no rotation is used in the game. Otherwise, this determines the size of the rotation grids |
 | columns  | number of columns and rows (allows only values compatible with the rotate radius parameter)  |
 | winning length  | number of player pieces in a row required to win the game  |
