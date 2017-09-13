@@ -26,9 +26,13 @@ canvas {
 
 #help {
 	text-align: left;
-	padding: 5px;
+	padding: 10px;
 	border: 1px dotted black;
-	margin: 5px;
+	margin: 10px;
+}
+
+#help td {
+		border-top: 1px solid #ddd;
 }
 
 ol {
@@ -94,7 +98,6 @@ table {
 }
 
 td {
-	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	padding: 5px 5px 5px 5px;
 }
