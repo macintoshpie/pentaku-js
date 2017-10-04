@@ -1,10 +1,11 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask, render_template, send_file
+app = Flask(__name__, static_url_path='')
 
 
 @app.route('/')
 def hello():
-	return render_template('index.html')
+	return send_file('index.html')
+	#return render_template('index.html')
     #return "Hello World!"
 
 if __name__ == '__main__':
