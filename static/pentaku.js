@@ -674,7 +674,7 @@ function waitOverlay() {
 /**
 * disables input for the user while getting and playing moves for the current ai player.
 */
-async function takeAiTurn() {
+function takeAiTurn() {
 	//Disable stuff for human player...
 	currentGame.aiPlaying = true;
 	currentGame.overlay = [waitOverlay()];
@@ -683,8 +683,12 @@ async function takeAiTurn() {
 
 	aimove = currentGame.players[currentGame.currentPlayer].ai.getMove(currentGame.board);
 
-	//Wait a bit
-	await sleep(1000);
+
+	setTimeout(function() {placeAiTurn(aimove)}, 1000);
+}
+
+function placeAiTurn(aimove) {
+
 	//Place cell
 	currentGame.board[aimove.placement.i][aimove.placement.j].value = currentGame.currentPlayer;
 
@@ -692,8 +696,11 @@ async function takeAiTurn() {
 	//Check for win
 	winner = checkForWin(currentGame.board[aimove.placement.i][aimove.placement.j])
 
-	//Wait a bit
-	await sleep(1000);
+	setTimeout(function() {rotateAi(aimove)}, 1000);
+}
+
+function rotateAi(aimove) {
+
 	//If rotating in game
 	if (currentGame.rotateRadius > 0) {
 		let celli = currentGame.grid[aimove.rotateLoc].linkedCelli;
