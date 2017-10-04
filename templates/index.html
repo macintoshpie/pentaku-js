@@ -62,14 +62,14 @@
 		<div id="optionsContainer" style="display: none;"></div>
 
 		<div style="display:none;">
-		  <img id="counterclockwiseImg" src="counterclockwise.png">
-		  <img id="clockwiseImg" src="clockwise.png">
+		  <img id="counterclockwiseImg" src="{{ url_for('static', filename='counterclockwise.png') }}">
+		  <img id="clockwiseImg" src="{{ url_for('static', filename='clockwise.png') }}">
 		</div>
 
-		<script type="text/javascript" src="boardSetup.js"></script>
-		<script type="text/javascript" src="zombieai.js"></script>
-		<script type="text/javascript" src="defenseAi.js"></script>
-		<script type="text/javascript" src="pentaku.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='boardSetup.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='zombieai.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='defenseAi.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='pentaku.js') }}"></script>
 	</div>
 
 
