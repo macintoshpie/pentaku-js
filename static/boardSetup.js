@@ -97,7 +97,7 @@ function refreshScoreboard() {
 //BOARD OPTIONS
 
 let newBoardBtn = document.getElementById("newBoard");
-let optionsContainer = document.getElementById("optionsContainer");
+let optionsContainer = document.getElementById("optionsCont");
 
 
 //Template settings
