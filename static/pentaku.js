@@ -696,10 +696,10 @@ function placeAiTurn(aimove) {
 	//Check for win
 	winner = checkForWin(currentGame.board[aimove.placement.i][aimove.placement.j])
 
-	setTimeout(function() {rotateAi(aimove)}, 1000);
+	setTimeout(function() {rotateAi(aimove, winner)}, 1000);
 }
 
-function rotateAi(aimove) {
+function rotateAi(aimove, winner) {
 
 	//If rotating in game
 	if (currentGame.rotateRadius > 0) {
@@ -710,7 +710,7 @@ function rotateAi(aimove) {
 		
 		rotateCells(centerRotateCell, aimove.rotateDir);
 		//Check for win
-		winner = checkPerimeterForWin(centerRotateCell)
+		winner = winner ? winner : checkPerimeterForWin(centerRotateCell)
 	}
 
 	if (winner) {
