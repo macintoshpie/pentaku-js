@@ -3,7 +3,7 @@ This is a small game I made to learn some basic javascript and HTML canvas. I in
 
 ### [Demo here](http://pentaku.herokuapp.com)
 
-#### The basics:
+#### Game basics:
 1. Place player piece on empty space of board
 2. (Optional, if rotation enabled) Choose a quadrant and rotate it 90 degrees clockwise or couterclockwise
 3. Win by getting enough of your player pieces in a horizontal, vertical, or diagonal line  
