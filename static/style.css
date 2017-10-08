@@ -5,9 +5,37 @@
 }
 
 canvas {
-	background: #eee; 
+	background: #EEE; 
 	display: block;
 	margin: 0 auto;
+}
+
+button {
+	border: none;
+    color: white;
+    padding: 15px 32px ;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #BBBBBB;
+}
+
+button:hover {
+	background-color: gray;
+}
+
+button:active {
+	background-color: gray;
+}
+
+table {
+	border-collapse: collapse;
+	margin-left: 5px;
+}
+
+td {
+	border-bottom: 1px solid #DDD;
+	padding: 5px 5px 5px 5px;
 }
 
 #gameHeader {
@@ -16,8 +44,8 @@ canvas {
 
 #helpBtn {
 	color: black;
-	background: none!important;
-	padding: 0!important;
+	background: none;
+	padding: 0;
 	float: right;
 	margin: 0px 10px 0px 0px;
 	text-decoration: none;
@@ -54,29 +82,22 @@ a, a:hover, a:visited, a:active {
 #gameContainer table {
 	margin: 0 auto;
 	width: 100%;
+	padding: 3px;
 }
 
-#gameFooter {
-	display:table;
-    width:100%;
-    table-layout: fixed;
+#optionsCont {
+    text-align: justify;
+    max-width: 600px;
 }
 
-button {
-	border: none;
-    color: white;
-    padding: 15px 32px ;
-    margin: 5px 0px 5px 0px;
-    text-align: center;
-    text-decoration: none;
+#optionsCont > button {
+	width: 25%;
+    vertical-align: top;
+    display: inline-block;
 }
 
-button:hover {
-	background-color: gray;
-}
-
-button:active {
-	background-color: gray;
+#optionsCont td > button {
+	width: 100%;
 }
 
 input {
@@ -88,52 +109,23 @@ select {
 	width: 80%;
 }
 
-#optionsContainer > table {
-	padding: 3px;
+#optionsCont > #startGameBtn {
+	width: 100%;
+	background-color: #638CCC;
+	margin: 5px 0px 5px 0px;
 }
 
-table {
-	border-collapse: collapse;
-	margin-left: 5px;
+#optionsCont > #startGameBtn:hover {
+	background-color: #4f82b8;
 }
 
-td {
-	border-bottom: 1px solid #ddd;
-	padding: 5px 5px 5px 5px;
+#gameFooter {
+	display:table;
+    width:100%;
+    table-layout: fixed;
 }
-
 
 #gameFooter > button {
     width: 100%;
 }
 
-#optionsContainer {
-    text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
-    
-    max-width: 600px;
-}
-
-#optionsContainer > button {
-	width: 25%;
-    vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    display: inline;
-    zoom: 1
-}
-
-#optionsContainer td > button {
-	width: 100%;
-}
-
-#optionsContainer > #startGameBtn {
-	width: 100%;
-	background-color: rgb(99,140,204);
-	margin: 5px 0px 5px 0px;
-}
-
-#optionsContainer > #startGameBtn:hover {
-	background-color: rgb(79,130,184);
-}
