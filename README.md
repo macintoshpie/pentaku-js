@@ -18,7 +18,7 @@ The app includes a GUI that allows the user edit parameters of the game:
 | players  | number of players  |
 | player name, type, color  | attributes of the player. Ok bot is an ok bot, random bot is random...  |
 
-###What I learned making this app
+### What I learned making this app
 - Javascript events
 - Javascript DOM
 - Javascript OOP basics
